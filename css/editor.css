@@ -1,0 +1,84 @@
+body{
+  font: 14px/1.4em Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.editor-container{
+  width:660px;
+  padding: 10px;
+  margin: 25px auto 0;
+  border: 1px solid #eee;
+  position: relative;
+}
+
+.editor-container > div {
+  outline: none;
+}
+
+.editor-section{
+  margin: 6px 0;
+  padding: 6px;
+  outline: 1px solid #e1e1e1;
+  min-height: 1.3em;
+}
+
+.editor-section:hover{
+  background: #fbfbfb;
+}
+
+.editor-section:after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.editor-section .img-box{
+  border:1px solid #d1d1d1;
+  padding: 1px;
+  min-width:220px;
+  min-height: 120px;
+  background-color: #e1e1e1;
+  max-width: 50%;
+}
+
+.editor-section .img-box img{
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.editor-section .img-box.float-left{
+  float: right;
+  margin: 0 5px 5px 0;
+}
+
+.editor-section .img-box.float-right{
+  float: right;
+  margin: 0 0 5px 5px;
+}
+
+.editor-toolbar{
+  position: absolute;
+  top: -300px;
+  right:10px;
+  height:20px;
+  line-height: 20px;
+  font-size: 11px;
+  padding: 2px 4px;
+  background: #f2f2f2;
+  border: 1px solid #e1e1e1;
+  -webkit-transition: top 0.2s linear;
+  transition: top 0.2s linear;
+}
+
+.editor-toolbar a[rel]{
+  padding: 2px 4px;
+  border: 1px solid #e1e1e1;
+  background: #fafafa;
+  margin: 0 1px;
+  cursor: pointer;
+}
+
+.editor-toolbar a[rel]:hover{
+  border-color: #b1b1b1;
+}
